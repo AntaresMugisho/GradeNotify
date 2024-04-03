@@ -105,17 +105,20 @@ def scrap():
             # Create course
             elif len(table_data) == 9:
                 # A new course
-                course = {
-                    "code": table_data[0].text,
-                    "title": table_data[1].text,
-                    "credits": table_data[2].text,
-                    "graded": table_data[3].text,
-                    "grade": table_data[4].text,
-                    "gp": table_data[5].text,
-                    "percent": table_data[6].text,
-                    "credit_points": table_data[7].text,
-                    "gpa": table_data[8].text
-                }
+                course_keys = ["code", "title", "credits", "graded", "grade", "gp", "percent", "credits_points", "gpa"]
+                course_values = []
+                for k in range(9):
+                    value = table_data[k].text if table_data[k].text else None
+                    if value and value.isnumeric():
+                        value = int(value)
+                    elif value:
+                        try:
+                            value = float(value)
+                        except ValueError:
+                            pass
+                    course_values.append(value)
+
+                course = dict(zip(course_keys, course_values))
 
                 courses.append(course)
                 categories[-1].setdefault("courses", courses)
@@ -123,13 +126,13 @@ def scrap():
             elif len(table_data) == 8:
                 # The total
                 total = {
-                    "credits": table_data[1].text,
-                    "graded": table_data[2].text,
+                    "credits": int(table_data[1].text),
+                    "graded": int(table_data[2].text),
                     "grade": table_data[3].text,
-                    "gp": table_data[4].text,
-                    "percent": table_data[5].text,
-                    "credit_points": table_data[6].text,
-                    "gpa": table_data[7].text,
+                    "gp": float(table_data[4].text),
+                    "percent": float(table_data[5].text),
+                    "credit_points": float(table_data[6].text),
+                    "gpa": float(table_data[7].text),
                 }
 
                 transcript.setdefault("total", total)
