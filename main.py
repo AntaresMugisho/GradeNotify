@@ -94,6 +94,7 @@ def scrap():
 
             # If a row contains 2 td, it's a category row
             if len(table_data) == 2:
+                print("Cat")
                 category = {
                     "code": table_data[0].text,
                     "title": table_data[1].text
@@ -117,11 +118,12 @@ def scrap():
 
                 course = dict(zip(course_keys, course_values))
                 courses.append(course)
-                pprint(categories[-1]['code'])
-                categories[-1].setdefault("courses", courses)
+                # pprint(categories[-1]['code'])
+                # categories[-1].setdefault("courses", courses)
 
             elif len(table_data) == 8:
                 # The total
+                print("Total")
                 total = {
                     "credits": int(table_data[1].text),
                     "graded": int(table_data[2].text),
@@ -132,9 +134,9 @@ def scrap():
                     "gpa": float(table_data[7].text),
                 }
 
-                transcript.setdefault("total", total)
+                # transcript.setdefault("total", total)
 
-        transcript.setdefault("categories", categories)
+        # transcript.setdefault("categories", categories)
         transcripts.append(transcript)
 
     # Add transcripts to the data object and save it
