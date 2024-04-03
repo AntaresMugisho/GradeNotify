@@ -67,8 +67,8 @@ def load():
 
 
 def save(data: dict):
-    with open("data.json", "w") as file:
-        json.dump(data, file, indent=4)
+    with open("data.json", "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=4, ensure_ascii=False)
 
 
 def scrap():
@@ -76,35 +76,32 @@ def scrap():
         content = file.read()
 
     soup = BeautifulSoup(content, 'html.parser')
-    marksheets = soup.find_all(id="transdetail")
+    tables = [soup.find(id="transdetail")]
 
-    for i, marksheet in enumerate(marksheets):
-        rows = marksheet.find_all("tr")
-
+    for i, table in enumerate(tables):
+        # Create a single transcript
         transcript = {"level": i+1}
 
-        # Create categories and courses
+        # Create empty categories and courses
         categories = []
         courses = []
-        for j, row in enumerate(rows):
-            if j == 0:
-                # Skip the first row cause it contains table heading
-                continue
 
+        rows = table.find_all("tr")
+
+        # Skip the first row cause it contains table heading that is not interesting us
+        for row in rows[1:]:
             table_data = row.find_all("td")
 
-            # Create category
+            # If a row contains 2 td, it's a category row
             if len(table_data) == 2:
-                # A new category
                 category = {
                     "code": table_data[0].text,
                     "title": table_data[1].text
                 }
                 categories.append(category)
 
-            # Create course
+            # If a row contains 9 td, it's a course row
             elif len(table_data) == 9:
-                # A new course
                 course_keys = ["code", "title", "credits", "graded", "grade", "gp", "percent", "credits_points", "gpa"]
                 course_values = []
                 for k in range(9):
@@ -119,8 +116,8 @@ def scrap():
                     course_values.append(value)
 
                 course = dict(zip(course_keys, course_values))
-
                 courses.append(course)
+                pprint(categories[-1]['code'])
                 categories[-1].setdefault("courses", courses)
 
             elif len(table_data) == 8:

@@ -1,5 +1,5 @@
 {
-    "date": "2024-04-03T18:32:36.040033",
+    "date": "2024-04-03T19:10:44.359096",
     "transcripts": [
         {
             "level": 1,
@@ -19,7 +19,7 @@
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -52,7 +52,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -63,7 +63,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -74,7 +74,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -85,7 +85,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -107,7 +107,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -162,7 +162,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -195,7 +195,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -212,7 +212,7 @@
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -245,7 +245,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -256,7 +256,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -267,7 +267,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -278,7 +278,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -300,7 +300,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -355,7 +355,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -388,7 +388,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -405,7 +405,7 @@
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -438,7 +438,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -449,7 +449,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -460,7 +460,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -471,7 +471,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -493,7 +493,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -548,7 +548,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -581,7 +581,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -598,7 +598,7 @@
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -631,7 +631,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -642,7 +642,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -653,7 +653,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -664,7 +664,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -686,7 +686,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -741,7 +741,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -774,7 +774,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -787,11 +787,11 @@
                 },
                 {
                     "code": "UE 113",
-                    "title": "Informatique et R\u00e9seaux",
+                    "title": "Informatique et Réseaux",
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -824,7 +824,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -835,7 +835,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -846,7 +846,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -857,7 +857,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -879,7 +879,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -934,7 +934,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -967,7 +967,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -984,7 +984,7 @@
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -1017,7 +1017,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -1028,7 +1028,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -1039,7 +1039,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -1050,7 +1050,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -1072,7 +1072,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -1127,7 +1127,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -1160,7 +1160,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -1177,7 +1177,7 @@
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -1210,7 +1210,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -1221,7 +1221,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -1232,7 +1232,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -1243,7 +1243,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -1265,7 +1265,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -1320,7 +1320,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -1353,7 +1353,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -1370,7 +1370,7 @@
                     "courses": [
                         {
                             "code": "THEO.",
-                            "title": "D\u00e9veloppement Spirituel      ",
+                            "title": "Développement Spirituel      ",
                             "credits": 1,
                             "graded": null,
                             "grade": null,
@@ -1403,7 +1403,7 @@
                         },
                         {
                             "code": "PHI     101",
-                            "title": "Introduction  \u00e0 la Philosophie     ",
+                            "title": "Introduction  à la Philosophie     ",
                             "credits": 3,
                             "graded": 3,
                             "grade": "A-",
@@ -1414,7 +1414,7 @@
                         },
                         {
                             "code": "BMAT 1101",
-                            "title": "Outils math\u00e9matique pour Ingenieur I   ",
+                            "title": "Outils mathématique pour Ingenieur I   ",
                             "credits": 6,
                             "graded": 6,
                             "grade": "B+",
@@ -1425,7 +1425,7 @@
                         },
                         {
                             "code": "BPHY 1101",
-                            "title": "Syst\u00e8mes et Fonctions \u00e9lectroniques    ",
+                            "title": "Systèmes et Fonctions électroniques    ",
                             "credits": 2,
                             "graded": 2,
                             "grade": "D-",
@@ -1436,7 +1436,7 @@
                         },
                         {
                             "code": "BPHY 1102",
-                            "title": "Physique appliqu\u00e9e      ",
+                            "title": "Physique appliquée      ",
                             "credits": 4,
                             "graded": 4,
                             "grade": "B+",
@@ -1458,7 +1458,7 @@
                         },
                         {
                             "code": "BNET 1101",
-                            "title": "Introduction aux R\u00e9seaux de T\u00e9l\u00e9communications    ",
+                            "title": "Introduction aux Réseaux de Télécommunications    ",
                             "credits": 3,
                             "graded": null,
                             "grade": null,
@@ -1513,7 +1513,7 @@
                         },
                         {
                             "code": "BPHY 1202",
-                            "title": "Rayonnement et Antennes et Propagation guid\u00e9e  ",
+                            "title": "Rayonnement et Antennes et Propagation guidée  ",
                             "credits": 5,
                             "graded": 5,
                             "grade": "A-",
@@ -1546,7 +1546,7 @@
                         },
                         {
                             "code": "BNET 1202",
-                            "title": "R\u00e9seaux de donn\u00e9es,file d attente et introduction aux R\u00e9seaux",
+                            "title": "Réseaux de données,file d attente et introduction aux Réseaux",
                             "credits": 5,
                             "graded": 5,
                             "grade": "B+",
@@ -1558,1182 +1558,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "level": 2,
-            "total": {
-                "credits": 37,
-                "graded": 33,
-                "grade": "",
-                "gp": 99.8,
-                "percent": 69.6,
-                "credit_points": 2353.0,
-                "gpa": 3.02
-            },
-            "categories": [
-                {
-                    "code": "UE 211",
-                    "title": "Cours d Appui",
-                    "courses": [
-                        {
-                            "code": "BREC 2201",
-                            "title": "Initiation \u00e0 la Rechereche     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 3104",
-                            "title": "Anglais IV      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B",
-                            "gp": 9,
-                            "percent": 71,
-                            "credits_points": 213,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BTHE 2201",
-                            "title": "Croyances chr\u00e9tiennes      ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "C+",
-                            "gp": 5,
-                            "percent": 60,
-                            "credits_points": 120,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BIB 101",
-                            "title": "Introduction \u00e0 la Bible     ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "B",
-                            "gp": 6,
-                            "percent": 72,
-                            "credits_points": 144,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BLED 2201",
-                            "title": "D\u00e9veloppement du Leadership     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 2103",
-                            "title": "Anglais III      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C",
-                            "gp": 6.9,
-                            "percent": 58.5,
-                            "credits_points": 175.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BMAT2103",
-                            "title": "Introduction aux Statistiques , M\u00e9thodes d'optimisation et optimi",
-                            "credits": 5,
-                            "graded": 5,
-                            "grade": "A",
-                            "gp": 20,
-                            "percent": 91.5,
-                            "credits_points": 457.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BPHY 2103",
-                            "title": "Systemes de telecommunications optiques,circuit hyperfrequen   ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 67.5,
-                            "credits_points": 270,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2104",
-                            "title": "Bases de donnees et Systemes d informations des organisatio",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C-",
-                            "gp": 6.6,
-                            "percent": 55,
-                            "credits_points": 165,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2103",
-                            "title": "Conception et Programmation  Orient\u00e9e Objet  ramati ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "A-",
-                            "gp": 14.8,
-                            "percent": 80,
-                            "credits_points": 320,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSIC 2102",
-                            "title": "Theorie de l information et Communications numeriques  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B+",
-                            "gp": 9.9,
-                            "percent": 74,
-                            "credits_points": 222,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BNET 2103",
-                            "title": "R\u00e9seaux d entreprise,TCP/IP,Interconnection et applications    ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 66.5,
-                            "credits_points": 266,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2203",
-                            "title": "R\u00e9seaux locaux d entreprise     ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B+",
-                            "gp": 13.2,
-                            "percent": 79,
-                            "credits_points": 316,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2201",
-                            "title": "Administration des R\u00e9seaux et des Services  ",
-                            "credits": 3,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2202",
-                            "title": "S\u00e9curit\u00e9 des R\u00e9seaux     ",
-                            "credits": 4,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2204",
-                            "title": "Introduction \u00e0 la S\u00e9curit\u00e9 des R\u00e9seaux  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "A-",
-                            "gp": 11.1,
-                            "percent": 88,
-                            "credits_points": 264,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2205",
-                            "title": "Syst\u00e8mes,Virtualisation et S\u00e9curit\u00e9     ",
-                            "credits": 6,
-                            "graded": 6,
-                            "grade": "B-",
-                            "gp": 16.2,
-                            "percent": 67,
-                            "credits_points": 402,
-                            "gpa": null
-                        }
-                    ]
-                },
-                {
-                    "code": "UE 212",
-                    "title": "Formation scientifique",
-                    "courses": [
-                        {
-                            "code": "BREC 2201",
-                            "title": "Initiation \u00e0 la Rechereche     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 3104",
-                            "title": "Anglais IV      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B",
-                            "gp": 9,
-                            "percent": 71,
-                            "credits_points": 213,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BTHE 2201",
-                            "title": "Croyances chr\u00e9tiennes      ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "C+",
-                            "gp": 5,
-                            "percent": 60,
-                            "credits_points": 120,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BIB 101",
-                            "title": "Introduction \u00e0 la Bible     ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "B",
-                            "gp": 6,
-                            "percent": 72,
-                            "credits_points": 144,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BLED 2201",
-                            "title": "D\u00e9veloppement du Leadership     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 2103",
-                            "title": "Anglais III      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C",
-                            "gp": 6.9,
-                            "percent": 58.5,
-                            "credits_points": 175.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BMAT2103",
-                            "title": "Introduction aux Statistiques , M\u00e9thodes d'optimisation et optimi",
-                            "credits": 5,
-                            "graded": 5,
-                            "grade": "A",
-                            "gp": 20,
-                            "percent": 91.5,
-                            "credits_points": 457.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BPHY 2103",
-                            "title": "Systemes de telecommunications optiques,circuit hyperfrequen   ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 67.5,
-                            "credits_points": 270,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2104",
-                            "title": "Bases de donnees et Systemes d informations des organisatio",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C-",
-                            "gp": 6.6,
-                            "percent": 55,
-                            "credits_points": 165,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2103",
-                            "title": "Conception et Programmation  Orient\u00e9e Objet  ramati ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "A-",
-                            "gp": 14.8,
-                            "percent": 80,
-                            "credits_points": 320,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSIC 2102",
-                            "title": "Theorie de l information et Communications numeriques  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B+",
-                            "gp": 9.9,
-                            "percent": 74,
-                            "credits_points": 222,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BNET 2103",
-                            "title": "R\u00e9seaux d entreprise,TCP/IP,Interconnection et applications    ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 66.5,
-                            "credits_points": 266,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2203",
-                            "title": "R\u00e9seaux locaux d entreprise     ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B+",
-                            "gp": 13.2,
-                            "percent": 79,
-                            "credits_points": 316,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2201",
-                            "title": "Administration des R\u00e9seaux et des Services  ",
-                            "credits": 3,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2202",
-                            "title": "S\u00e9curit\u00e9 des R\u00e9seaux     ",
-                            "credits": 4,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2204",
-                            "title": "Introduction \u00e0 la S\u00e9curit\u00e9 des R\u00e9seaux  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "A-",
-                            "gp": 11.1,
-                            "percent": 88,
-                            "credits_points": 264,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2205",
-                            "title": "Syst\u00e8mes,Virtualisation et S\u00e9curit\u00e9     ",
-                            "credits": 6,
-                            "graded": 6,
-                            "grade": "B-",
-                            "gp": 16.2,
-                            "percent": 67,
-                            "credits_points": 402,
-                            "gpa": null
-                        }
-                    ]
-                },
-                {
-                    "code": "UE 213",
-                    "title": "Informatique",
-                    "courses": [
-                        {
-                            "code": "BREC 2201",
-                            "title": "Initiation \u00e0 la Rechereche     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 3104",
-                            "title": "Anglais IV      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B",
-                            "gp": 9,
-                            "percent": 71,
-                            "credits_points": 213,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BTHE 2201",
-                            "title": "Croyances chr\u00e9tiennes      ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "C+",
-                            "gp": 5,
-                            "percent": 60,
-                            "credits_points": 120,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BIB 101",
-                            "title": "Introduction \u00e0 la Bible     ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "B",
-                            "gp": 6,
-                            "percent": 72,
-                            "credits_points": 144,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BLED 2201",
-                            "title": "D\u00e9veloppement du Leadership     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 2103",
-                            "title": "Anglais III      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C",
-                            "gp": 6.9,
-                            "percent": 58.5,
-                            "credits_points": 175.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BMAT2103",
-                            "title": "Introduction aux Statistiques , M\u00e9thodes d'optimisation et optimi",
-                            "credits": 5,
-                            "graded": 5,
-                            "grade": "A",
-                            "gp": 20,
-                            "percent": 91.5,
-                            "credits_points": 457.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BPHY 2103",
-                            "title": "Systemes de telecommunications optiques,circuit hyperfrequen   ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 67.5,
-                            "credits_points": 270,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2104",
-                            "title": "Bases de donnees et Systemes d informations des organisatio",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C-",
-                            "gp": 6.6,
-                            "percent": 55,
-                            "credits_points": 165,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2103",
-                            "title": "Conception et Programmation  Orient\u00e9e Objet  ramati ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "A-",
-                            "gp": 14.8,
-                            "percent": 80,
-                            "credits_points": 320,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSIC 2102",
-                            "title": "Theorie de l information et Communications numeriques  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B+",
-                            "gp": 9.9,
-                            "percent": 74,
-                            "credits_points": 222,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BNET 2103",
-                            "title": "R\u00e9seaux d entreprise,TCP/IP,Interconnection et applications    ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 66.5,
-                            "credits_points": 266,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2203",
-                            "title": "R\u00e9seaux locaux d entreprise     ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B+",
-                            "gp": 13.2,
-                            "percent": 79,
-                            "credits_points": 316,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2201",
-                            "title": "Administration des R\u00e9seaux et des Services  ",
-                            "credits": 3,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2202",
-                            "title": "S\u00e9curit\u00e9 des R\u00e9seaux     ",
-                            "credits": 4,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2204",
-                            "title": "Introduction \u00e0 la S\u00e9curit\u00e9 des R\u00e9seaux  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "A-",
-                            "gp": 11.1,
-                            "percent": 88,
-                            "credits_points": 264,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2205",
-                            "title": "Syst\u00e8mes,Virtualisation et S\u00e9curit\u00e9     ",
-                            "credits": 6,
-                            "graded": 6,
-                            "grade": "B-",
-                            "gp": 16.2,
-                            "percent": 67,
-                            "credits_points": 402,
-                            "gpa": null
-                        }
-                    ]
-                },
-                {
-                    "code": "UE 214",
-                    "title": "Signal, Communication et r\u00e9seaux",
-                    "courses": [
-                        {
-                            "code": "BREC 2201",
-                            "title": "Initiation \u00e0 la Rechereche     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 3104",
-                            "title": "Anglais IV      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B",
-                            "gp": 9,
-                            "percent": 71,
-                            "credits_points": 213,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BTHE 2201",
-                            "title": "Croyances chr\u00e9tiennes      ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "C+",
-                            "gp": 5,
-                            "percent": 60,
-                            "credits_points": 120,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BIB 101",
-                            "title": "Introduction \u00e0 la Bible     ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "B",
-                            "gp": 6,
-                            "percent": 72,
-                            "credits_points": 144,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BLED 2201",
-                            "title": "D\u00e9veloppement du Leadership     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 2103",
-                            "title": "Anglais III      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C",
-                            "gp": 6.9,
-                            "percent": 58.5,
-                            "credits_points": 175.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BMAT2103",
-                            "title": "Introduction aux Statistiques , M\u00e9thodes d'optimisation et optimi",
-                            "credits": 5,
-                            "graded": 5,
-                            "grade": "A",
-                            "gp": 20,
-                            "percent": 91.5,
-                            "credits_points": 457.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BPHY 2103",
-                            "title": "Systemes de telecommunications optiques,circuit hyperfrequen   ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 67.5,
-                            "credits_points": 270,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2104",
-                            "title": "Bases de donnees et Systemes d informations des organisatio",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C-",
-                            "gp": 6.6,
-                            "percent": 55,
-                            "credits_points": 165,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2103",
-                            "title": "Conception et Programmation  Orient\u00e9e Objet  ramati ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "A-",
-                            "gp": 14.8,
-                            "percent": 80,
-                            "credits_points": 320,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSIC 2102",
-                            "title": "Theorie de l information et Communications numeriques  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B+",
-                            "gp": 9.9,
-                            "percent": 74,
-                            "credits_points": 222,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BNET 2103",
-                            "title": "R\u00e9seaux d entreprise,TCP/IP,Interconnection et applications    ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 66.5,
-                            "credits_points": 266,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2203",
-                            "title": "R\u00e9seaux locaux d entreprise     ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B+",
-                            "gp": 13.2,
-                            "percent": 79,
-                            "credits_points": 316,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2201",
-                            "title": "Administration des R\u00e9seaux et des Services  ",
-                            "credits": 3,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2202",
-                            "title": "S\u00e9curit\u00e9 des R\u00e9seaux     ",
-                            "credits": 4,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2204",
-                            "title": "Introduction \u00e0 la S\u00e9curit\u00e9 des R\u00e9seaux  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "A-",
-                            "gp": 11.1,
-                            "percent": 88,
-                            "credits_points": 264,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2205",
-                            "title": "Syst\u00e8mes,Virtualisation et S\u00e9curit\u00e9     ",
-                            "credits": 6,
-                            "graded": 6,
-                            "grade": "B-",
-                            "gp": 16.2,
-                            "percent": 67,
-                            "credits_points": 402,
-                            "gpa": null
-                        }
-                    ]
-                },
-                {
-                    "code": "UE 222",
-                    "title": "R\u00e9seaux I",
-                    "courses": [
-                        {
-                            "code": "BREC 2201",
-                            "title": "Initiation \u00e0 la Rechereche     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 3104",
-                            "title": "Anglais IV      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B",
-                            "gp": 9,
-                            "percent": 71,
-                            "credits_points": 213,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BTHE 2201",
-                            "title": "Croyances chr\u00e9tiennes      ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "C+",
-                            "gp": 5,
-                            "percent": 60,
-                            "credits_points": 120,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BIB 101",
-                            "title": "Introduction \u00e0 la Bible     ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "B",
-                            "gp": 6,
-                            "percent": 72,
-                            "credits_points": 144,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BLED 2201",
-                            "title": "D\u00e9veloppement du Leadership     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 2103",
-                            "title": "Anglais III      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C",
-                            "gp": 6.9,
-                            "percent": 58.5,
-                            "credits_points": 175.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BMAT2103",
-                            "title": "Introduction aux Statistiques , M\u00e9thodes d'optimisation et optimi",
-                            "credits": 5,
-                            "graded": 5,
-                            "grade": "A",
-                            "gp": 20,
-                            "percent": 91.5,
-                            "credits_points": 457.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BPHY 2103",
-                            "title": "Systemes de telecommunications optiques,circuit hyperfrequen   ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 67.5,
-                            "credits_points": 270,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2104",
-                            "title": "Bases de donnees et Systemes d informations des organisatio",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C-",
-                            "gp": 6.6,
-                            "percent": 55,
-                            "credits_points": 165,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2103",
-                            "title": "Conception et Programmation  Orient\u00e9e Objet  ramati ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "A-",
-                            "gp": 14.8,
-                            "percent": 80,
-                            "credits_points": 320,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSIC 2102",
-                            "title": "Theorie de l information et Communications numeriques  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B+",
-                            "gp": 9.9,
-                            "percent": 74,
-                            "credits_points": 222,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BNET 2103",
-                            "title": "R\u00e9seaux d entreprise,TCP/IP,Interconnection et applications    ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 66.5,
-                            "credits_points": 266,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2203",
-                            "title": "R\u00e9seaux locaux d entreprise     ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B+",
-                            "gp": 13.2,
-                            "percent": 79,
-                            "credits_points": 316,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2201",
-                            "title": "Administration des R\u00e9seaux et des Services  ",
-                            "credits": 3,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2202",
-                            "title": "S\u00e9curit\u00e9 des R\u00e9seaux     ",
-                            "credits": 4,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2204",
-                            "title": "Introduction \u00e0 la S\u00e9curit\u00e9 des R\u00e9seaux  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "A-",
-                            "gp": 11.1,
-                            "percent": 88,
-                            "credits_points": 264,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2205",
-                            "title": "Syst\u00e8mes,Virtualisation et S\u00e9curit\u00e9     ",
-                            "credits": 6,
-                            "graded": 6,
-                            "grade": "B-",
-                            "gp": 16.2,
-                            "percent": 67,
-                            "credits_points": 402,
-                            "gpa": null
-                        }
-                    ]
-                },
-                {
-                    "code": "UE 223",
-                    "title": "R\u00e9seaux II",
-                    "courses": [
-                        {
-                            "code": "BREC 2201",
-                            "title": "Initiation \u00e0 la Rechereche     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 3104",
-                            "title": "Anglais IV      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B",
-                            "gp": 9,
-                            "percent": 71,
-                            "credits_points": 213,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BTHE 2201",
-                            "title": "Croyances chr\u00e9tiennes      ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "C+",
-                            "gp": 5,
-                            "percent": 60,
-                            "credits_points": 120,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BIB 101",
-                            "title": "Introduction \u00e0 la Bible     ",
-                            "credits": 2,
-                            "graded": 2,
-                            "grade": "B",
-                            "gp": 6,
-                            "percent": 72,
-                            "credits_points": 144,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BLED 2201",
-                            "title": "D\u00e9veloppement du Leadership     ",
-                            "credits": 2,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BANG 2103",
-                            "title": "Anglais III      ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C",
-                            "gp": 6.9,
-                            "percent": 58.5,
-                            "credits_points": 175.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BMAT2103",
-                            "title": "Introduction aux Statistiques , M\u00e9thodes d'optimisation et optimi",
-                            "credits": 5,
-                            "graded": 5,
-                            "grade": "A",
-                            "gp": 20,
-                            "percent": 91.5,
-                            "credits_points": 457.5,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BPHY 2103",
-                            "title": "Systemes de telecommunications optiques,circuit hyperfrequen   ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 67.5,
-                            "credits_points": 270,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2104",
-                            "title": "Bases de donnees et Systemes d informations des organisatio",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "C-",
-                            "gp": 6.6,
-                            "percent": 55,
-                            "credits_points": 165,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BCSC  2103",
-                            "title": "Conception et Programmation  Orient\u00e9e Objet  ramati ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "A-",
-                            "gp": 14.8,
-                            "percent": 80,
-                            "credits_points": 320,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSIC 2102",
-                            "title": "Theorie de l information et Communications numeriques  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "B+",
-                            "gp": 9.9,
-                            "percent": 74,
-                            "credits_points": 222,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BNET 2103",
-                            "title": "R\u00e9seaux d entreprise,TCP/IP,Interconnection et applications    ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B-",
-                            "gp": 10.8,
-                            "percent": 66.5,
-                            "credits_points": 266,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2203",
-                            "title": "R\u00e9seaux locaux d entreprise     ",
-                            "credits": 4,
-                            "graded": 4,
-                            "grade": "B+",
-                            "gp": 13.2,
-                            "percent": 79,
-                            "credits_points": 316,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2201",
-                            "title": "Administration des R\u00e9seaux et des Services  ",
-                            "credits": 3,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2202",
-                            "title": "S\u00e9curit\u00e9 des R\u00e9seaux     ",
-                            "credits": 4,
-                            "graded": null,
-                            "grade": null,
-                            "gp": null,
-                            "percent": null,
-                            "credits_points": null,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2204",
-                            "title": "Introduction \u00e0 la S\u00e9curit\u00e9 des R\u00e9seaux  ",
-                            "credits": 3,
-                            "graded": 3,
-                            "grade": "A-",
-                            "gp": 11.1,
-                            "percent": 88,
-                            "credits_points": 264,
-                            "gpa": null
-                        },
-                        {
-                            "code": "BSSR 2205",
-                            "title": "Syst\u00e8mes,Virtualisation et S\u00e9curit\u00e9     ",
-                            "credits": 6,
-                            "graded": 6,
-                            "grade": "B-",
-                            "gp": 16.2,
-                            "percent": 67,
-                            "credits_points": 402,
-                            "gpa": null
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "level": 3,
-            "categories": []
         }
     ]
 }
