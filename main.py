@@ -58,8 +58,8 @@ def load():
     :return: data
     """
     with open("data.json", "r") as file:
-        data = json.load(file)
-        return data
+        previous_data = json.load(file)
+        return previous_data
 
 
 def scrap(html_content: str) -> dict:
@@ -125,10 +125,13 @@ def scrap(html_content: str) -> dict:
 
 if __name__ == "__main__":
     url = "https://mis.hau.bi/student/loadsingletranscriptforstudent2.php?level=&stucode=22100313"
-    headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3'}
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3'}
 
-    with open("index.html", "r") as file:
-        html_content = file.read()
-
-    data = scrap(html_content)
-    save(data)
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+    except requests.RequestException as e:
+        print(f"{e}")
+    else:
+        data = scrap(response.text)
+        save(data)
