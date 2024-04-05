@@ -1,64 +1,12 @@
 import json
 from datetime import datetime
+from pprint import pprint
 
 import requests
 from bs4 import BeautifulSoup
-from pprint import pprint
-
-test_data = {
-    "date": "2024-04-03T13:32:09.039364",
-    "transcripts": [
-        {
-            "level": 1,
-            "first_semester" : {
-                "categories": [
-                    {
-                        "code": "UE 111",
-                        "title": "Cours d'appui I",
-                        "courses": [
-                            {
-                                "code": "BANG 1101",
-                                "title": "Texte",
-                                "credits": 43,
-                                "graded": 3,
-                                "grade": "A+",
-                                "gp": 44.4,
-                                "percent": 3,
-                                "credit_points":2,
-                                "gpa": None
-                            }
-                        ]
-                    }
-                ],
-                "total": {
-                    "credits": 43,
-                    "graded": 3,
-                    "grade": None,
-                    "gp": 44,
-                    "percent": 3,
-                    "credit_points":2,
-                    "gpa": 45
-                }
-            },
-        }
-    ]
-}
-# data = {"date": datetime.now().isoformat(), "transcripts": []}
-# transcripts: list = data.get("transcripts")
-
-# def main():
-#     url = "https://mis.hau.bi/student/loadsingletranscriptforstudent2.php?level=&stucode=22100313"
-#     headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3'}
-#
-#     try:
-#         response = requests.get(url, headers=headers)
-#         with open("index.html", "w") as file:
-#             file.write(response.text)
-#     except requests.RequestException as e:
-#         print(f"Error: {e}")
 
 
-def get_course(table_data: list):
+def get_course(table_data: list) -> dict:
     course_keys = ["course_code", "course_title", "credits", "graded", "grade", "gp", "percent", "credits_points",
                    "gpa"]
     course_values = []
@@ -77,6 +25,33 @@ def get_course(table_data: list):
     return course
 
 
+def get_category(table_data: list) -> dict:
+    category = {
+        "category_code": table_data[0].text,
+        "category_title": table_data[1].text,
+        "courses": []
+    }
+    return category
+
+
+def get_total(table_data: list) -> dict:
+    total = {
+        "credits": int(table_data[1].text),
+        "graded": int(table_data[2].text),
+        "grade": table_data[3].text,
+        "gp": float(table_data[4].text),
+        "percent": float(table_data[5].text),
+        "credit_points": float(table_data[6].text),
+        "gpa": float(table_data[7].text),
+    }
+    return total
+
+
+def save(data: dict):
+    with open("data.json", "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=2, ensure_ascii=False)
+
+
 def load():
     """
     Loads previously saved data from JSON
@@ -87,80 +62,73 @@ def load():
         return data
 
 
-def save(data: dict):
-    with open("data.json", "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=2, ensure_ascii=False)
-
-
-def scrap(html_content: str):
+def scrap(html_content: str) -> dict:
     soup = BeautifulSoup(html_content, "html.parser")
-    tables = [soup.find(id="transdetail")]
+    tables = soup.find_all(id="transdetail")
 
-    transcripts = [{} for transcript in tables]
+    transcripts = [{} for _ in tables]
 
     for i, table in enumerate(tables):
         # Create a single transcript
         rows = table.find_all("tr")
 
+        semesters = []
         categories = []
+        totals = []
+
+        # Skip the first row cause it contains table heading that is not interesting us
         for row in rows[1:]:
             tds = row.find_all("td")
 
             # If a row contains 2 td, it's a category row
             if len(tds) == 2:
-                category = {
-                    "category_code": tds[0].text,
-                    "category_title": tds[1].text,
-                    "courses": []
-                }
-
+                category = get_category(tds)
                 categories.append(category)
-                transcripts[i] = {"level": i+1, "first_semester": {"categories":categories}, "second_semester": {}}
 
             # If a row contains 9 td, it's a course row
             elif len(tds) == 9:
                 course = get_course(tds)
                 categories[-1]["courses"].append(course)
 
-        # if len(table_data) == 8:
-        #     # The total
-        #     print("Total")
-        #     total = {
-        #         "credits": int(table_data[1].text),
-        #         "graded": int(table_data[2].text),
-        #         "grade": table_data[3].text,
-        #         "gp": float(table_data[4].text),
-        #         "percent": float(table_data[5].text),
-        #         "credit_points": float(table_data[6].text),
-        #         "gpa": float(table_data[7].text),
-        #     }
+            # If a row contains 8 td, it's a total row
+            elif len(tds) == 8:
+                total = get_total(tds)
+                totals.append(total)
 
+                semesters.append(categories)
 
-        # Create empty categories and courses
-        # categories = []
-        # Skip the first row cause it contains table heading that is not interesting us
-        # for row in rows[1:]:
-        #     table_data = row.find_all("td")
+            # In the case row contains 1 td, it's a second semester start row
+            elif len(tds) == 1:
+                categories = []
 
-    #
-    #             transcript.setdefault("total", total)
-    #
-    #     pprint(len(courses))
-    #
-    #     transcript.setdefault("categories", categories)
-    #     transcripts.append(transcript)
+        # Write collected data in a transcript
+        try:
+            transcripts[i] = {
+                "level": i + 1,
+                "first_semester": {
+                    "total": totals[0],
+                    "categories": semesters[0]
+                },
+                "second_semester": {
+                    "total": totals[1],
+                    "categories": semesters[1],
+                }
+            }
+        except IndexError as e:
+            print(f"Error while trying to save transcript of level {i+1}: {e}")
 
-    # Add transcripts to the data object and save it
-    # data.setdefault("transcripts", transcripts)
-
-    data = {
+    return {
         "date": datetime.now().isoformat(),
         "transcripts": transcripts
     }
-    save(data)
 
 
 if __name__ == "__main__":
+    url = "https://mis.hau.bi/student/loadsingletranscriptforstudent2.php?level=&stucode=22100313"
+    headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3'}
+
     with open("index.html", "r") as file:
         html_content = file.read()
-    scrap(html_content)
+
+    data = scrap(html_content)
+    save(data)
