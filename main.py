@@ -1,6 +1,5 @@
 import json
 from datetime import datetime
-from pprint import pprint
 
 import requests
 from bs4 import BeautifulSoup
@@ -70,7 +69,11 @@ def compare(previous_data, actual_data):
 
 
 def notify(message: str):
-    pass
+    requests.post("https://api.pushover.net/1/messages.json", data={
+        'user': "",
+        'token': "",
+        'message': message,
+    })
 
 def scrap(html_content: str) -> dict:
     soup = BeautifulSoup(html_content, "html.parser")
