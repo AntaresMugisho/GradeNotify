@@ -62,6 +62,16 @@ def load():
         return previous_data
 
 
+def compare(previous_data, actual_data):
+    if previous_data == actual_data:
+        print("No changes have been made")
+    else:
+        notify("Updates available")
+
+
+def notify(message: str):
+    pass
+
 def scrap(html_content: str) -> dict:
     soup = BeautifulSoup(html_content, "html.parser")
     tables = soup.find_all(id="transdetail")
