@@ -1,139 +1,248 @@
 {
-    "date": "2024-04-04T23:47:47.309270",
-    "transcripts": [
-        {
-            "level": 1,
-            "total": {
-                "credits": 34,
-                "graded": 24,
-                "grade": "",
-                "gp": 74.8,
-                "percent": 71.6,
-                "credit_points": 1740.0,
-                "gpa": 3.12
-            },
-            "categories": [
-                {
-                    "code": "UE 111",
-                    "title": "Cours d appui  I",
-                    "courses": {
-                        "code": "THEO.",
-                        "title": "Développement Spirituel      ",
-                        "credits": 1,
-                        "graded": null,
-                        "grade": null,
-                        "gp": null,
-                        "percent": null,
-                        "credits_points": null,
-                        "gpa": null
-                    }
-                },
-                {
-                    "code": "UE 111",
-                    "title": "Cours d Appui I",
-                    "courses": {
-                        "code": "ENG 001&002",
-                        "title": "Remedial English      ",
-                        "credits": 6,
-                        "graded": null,
-                        "grade": null,
-                        "gp": null,
-                        "percent": null,
-                        "credits_points": null,
-                        "gpa": null
-                    }
-                },
-                {
-                    "code": "UE 111",
-                    "title": "Cours d appui  I",
-                    "courses": {
-                        "code": "BANG   1101",
-                        "title": "English I      ",
-                        "credits": 3,
-                        "graded": 3,
-                        "grade": "A-",
-                        "gp": 11.1,
-                        "percent": 84,
-                        "credits_points": 252,
-                        "gpa": null
-                    }
-                },
-                {
-                    "code": "UE 112",
-                    "title": "Formation Scientifique I",
-                    "courses": {
-                        "code": "BMAT 1101",
-                        "title": "Outils mathématique pour Ingenieur I   ",
-                        "credits": 6,
-                        "graded": 6,
-                        "grade": "B+",
-                        "gp": 19.8,
-                        "percent": 77,
-                        "credits_points": 462,
-                        "gpa": null
-                    }
-                },
-                {
-                    "code": "UE 113",
-                    "title": "Informatique et Réseaux",
-                    "courses": {
-                        "code": "BCSC 1101",
-                        "title": "Initiation Unix et Algorithmique et Programmation  ",
-                        "credits": 6,
-                        "graded": 6,
-                        "grade": "B-",
-                        "gp": 16.2,
-                        "percent": 65,
-                        "credits_points": 390,
-                        "gpa": null
-                    }
-                },
-                {
-                    "code": "UE 121",
-                    "title": "Cours d Appui II",
-                    "courses": {
-                        "code": "BMTG 1202",
-                        "title": "Economie et Droit de l Entreprise   ",
-                        "credits": 3,
-                        "graded": 3,
-                        "grade": "A-",
-                        "gp": 11.1,
-                        "percent": 82,
-                        "credits_points": 246,
-                        "gpa": null
-                    }
-                },
-                {
-                    "code": "UE 122",
-                    "title": "Formation Scientifique II",
-                    "courses": {
-                        "code": "BMAT 1202",
-                        "title": "Outils mathematiques pour Ingenieur II   ",
-                        "credits": 6,
-                        "graded": 6,
-                        "grade": "B+",
-                        "gp": 19.8,
-                        "percent": 76,
-                        "credits_points": 456,
-                        "gpa": null
-                    }
-                },
-                {
-                    "code": "UE 123",
-                    "title": "Informatique,Signal et Communication",
-                    "courses": {
-                        "code": "BSIC 1201",
-                        "title": "Signal,Outils et Applications     ",
-                        "credits": 3,
-                        "graded": 3,
-                        "grade": "C+",
-                        "gp": 7.5,
-                        "percent": 61.5,
-                        "credits_points": 184.5,
-                        "gpa": null
-                    }
-                }
+  "date": "2024-04-05T13:02:02.673884",
+  "transcripts": [
+    {
+      "level": 1,
+      "first_semester": {
+        "categories": [
+          {
+            "category_code": "UE 111",
+            "category_title": "Cours d appui  I",
+            "courses": [
+              {
+                "course_code": "THEO.",
+                "course_title": "Développement Spirituel      ",
+                "credits": 1,
+                "graded": null,
+                "grade": null,
+                "gp": null,
+                "percent": null,
+                "credits_points": null,
+                "gpa": null
+              }
             ]
-        }
-    ]
+          },
+          {
+            "category_code": "UE 111",
+            "category_title": "Cours d Appui I",
+            "courses": [
+              {
+                "course_code": "ENG 001&002",
+                "course_title": "Remedial English      ",
+                "credits": 6,
+                "graded": null,
+                "grade": null,
+                "gp": null,
+                "percent": null,
+                "credits_points": null,
+                "gpa": null
+              }
+            ]
+          },
+          {
+            "category_code": "UE 111",
+            "category_title": "Cours d appui  I",
+            "courses": [
+              {
+                "course_code": "BANG   1101",
+                "course_title": "English I      ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "A-",
+                "gp": 11.1,
+                "percent": 84,
+                "credits_points": 252,
+                "gpa": null
+              },
+              {
+                "course_code": "PHI     101",
+                "course_title": "Introduction  à la Philosophie     ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "A-",
+                "gp": 11.1,
+                "percent": 81,
+                "credits_points": 243,
+                "gpa": null
+              }
+            ]
+          },
+          {
+            "category_code": "UE 112",
+            "category_title": "Formation Scientifique I",
+            "courses": [
+              {
+                "course_code": "BMAT 1101",
+                "course_title": "Outils mathématique pour Ingenieur I   ",
+                "credits": 6,
+                "graded": 6,
+                "grade": "B+",
+                "gp": 19.8,
+                "percent": 77,
+                "credits_points": 462,
+                "gpa": null
+              },
+              {
+                "course_code": "BPHY 1101",
+                "course_title": "Systèmes et Fonctions électroniques    ",
+                "credits": 2,
+                "graded": 2,
+                "grade": "D-",
+                "gp": 3.4,
+                "percent": 48.5,
+                "credits_points": 97,
+                "gpa": null
+              },
+              {
+                "course_code": "BPHY 1102",
+                "course_title": "Physique appliquée      ",
+                "credits": 4,
+                "graded": 4,
+                "grade": "B+",
+                "gp": 13.2,
+                "percent": 74,
+                "credits_points": 296,
+                "gpa": null
+              }
+            ]
+          },
+          {
+            "category_code": "UE 113",
+            "category_title": "Informatique et Réseaux",
+            "courses": [
+              {
+                "course_code": "BCSC 1101",
+                "course_title": "Initiation Unix et Algorithmique et Programmation  ",
+                "credits": 6,
+                "graded": 6,
+                "grade": "B-",
+                "gp": 16.2,
+                "percent": 65,
+                "credits_points": 390,
+                "gpa": null
+              },
+              {
+                "course_code": "BNET 1101",
+                "course_title": "Introduction aux Réseaux de Télécommunications    ",
+                "credits": 3,
+                "graded": null,
+                "grade": null,
+                "gp": null,
+                "percent": null,
+                "credits_points": null,
+                "gpa": null
+              }
+            ]
+          },
+          {
+            "category_code": "UE 121",
+            "category_title": "Cours d Appui II",
+            "courses": [
+              {
+                "course_code": "BMTG 1202",
+                "course_title": "Economie et Droit de l Entreprise   ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "A-",
+                "gp": 11.1,
+                "percent": 82,
+                "credits_points": 246,
+                "gpa": null
+              },
+              {
+                "course_code": "BANG 1202",
+                "course_title": "Anglais II      ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "A-",
+                "gp": 11.1,
+                "percent": 86.5,
+                "credits_points": 259.5,
+                "gpa": null
+              },
+              {
+                "course_code": "BKSW 1201",
+                "course_title": "Kiswahili       ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "C+",
+                "gp": 7.5,
+                "percent": 63,
+                "credits_points": 189,
+                "gpa": null
+              }
+            ]
+          },
+          {
+            "category_code": "UE 122",
+            "category_title": "Formation Scientifique II",
+            "courses": [
+              {
+                "course_code": "BMAT 1202",
+                "course_title": "Outils mathematiques pour Ingenieur II   ",
+                "credits": 6,
+                "graded": 6,
+                "grade": "B+",
+                "gp": 19.8,
+                "percent": 76,
+                "credits_points": 456,
+                "gpa": null
+              },
+              {
+                "course_code": "BPHY 1202",
+                "course_title": "Rayonnement et Antennes et Propagation guidée  ",
+                "credits": 5,
+                "graded": 5,
+                "grade": "A-",
+                "gp": 18.5,
+                "percent": 85.5,
+                "credits_points": 427.5,
+                "gpa": null
+              }
+            ]
+          },
+          {
+            "category_code": "UE 123",
+            "category_title": "Informatique,Signal et Communication",
+            "courses": [
+              {
+                "course_code": "BSIC 1201",
+                "course_title": "Signal,Outils et Applications     ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "C+",
+                "gp": 7.5,
+                "percent": 61.5,
+                "credits_points": 184.5,
+                "gpa": null
+              },
+              {
+                "course_code": "BCSC 1202",
+                "course_title": "Architecture materielle et logicielle et Projet informatique ",
+                "credits": 4,
+                "graded": 4,
+                "grade": "A-",
+                "gp": 14.8,
+                "percent": 86,
+                "credits_points": 344,
+                "gpa": null
+              },
+              {
+                "course_code": "BNET 1202",
+                "course_title": "Réseaux de données,file d attente et introduction aux Réseaux",
+                "credits": 5,
+                "graded": 5,
+                "grade": "B+",
+                "gp": 16.5,
+                "percent": 77,
+                "credits_points": 385,
+                "gpa": null
+              }
+            ]
+          }
+        ]
+      },
+      "second_semester": {}
+    }
+  ]
 }
