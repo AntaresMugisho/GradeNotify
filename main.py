@@ -1,8 +1,11 @@
 import json
+import os
 from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+load_dotenv()
 
 
 def get_course(table_data: list) -> dict:
@@ -46,12 +49,12 @@ def get_total(table_data: list) -> dict:
     return total
 
 
-def save(data: dict):
+def save_data(data: dict):
     with open("data.json", "w", encoding="utf-8") as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
 
 
-def load():
+def get_previous_data():
     """
     Loads previously saved data from JSON
     :return: data
@@ -63,17 +66,25 @@ def load():
 
 def compare(previous_data, actual_data):
     if previous_data == actual_data:
-        print("No changes have been made")
-    else:
-        notify("Updates available")
+        return False
+
+    diff = {key : (previous_data[key], actual_data[key]) for key in previous_data if previous_data[key] != actual_data[key]}
+    return diff
 
 
 def notify(message: str):
-    requests.post("https://api.pushover.net/1/messages.json", data={
-        'user': "",
-        'token': "",
-        'message': message,
-    })
+    try:
+        requests.post("https://api.pushover.net/1/messages.json", data={
+            'user': os.environ["PUSHOVER_USER"],
+            'token': os.environ["PUSHOVER_TOKEN"],
+            'message': message,
+            'url': "https://www.google.com",
+            'url_title': "Visit"
+        }).raise_for_status()
+    except requests.RequestException as e:
+        print(f"Err : {e}")
+        raise e
+
 
 def scrap(html_content: str) -> dict:
     soup = BeautifulSoup(html_content, "html.parser")
@@ -137,8 +148,11 @@ def scrap(html_content: str) -> dict:
 
 
 if __name__ == "__main__":
-    url = "https://mis.hau.bi/student/loadsingletranscriptforstudent2.php?level=&stucode=22100313"
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.3'}
+    url = f"https://mis.hau.bi/student/loadsingletranscriptforstudent2.php?stucode={os.environ['STUCODE']}"
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                             'Chrome/109.0.0.0 Safari/537.3'}
+
+
 
     try:
         response = requests.get(url, headers=headers)
@@ -146,5 +160,14 @@ if __name__ == "__main__":
     except requests.RequestException as e:
         print(f"{e}")
     else:
-        data = scrap(response.text)
-        save(data)
+        previous_data = get_previous_data()
+        actual_data = scrap(response.text)
+        difference = compare(actual_data, previous_data)
+
+        if difference:
+            # notify("Hello Hello antares")
+            # save(data)
+            print("Updates available")
+            print(difference)
+        else:
+            print("No updates available")
