@@ -150,9 +150,12 @@ def scrap(html_content: str) -> dict:
                 categories = []
 
         # Write collected data in a transcript
-        if len(totals) < 2:
+        if len(semesters) == 0:
             totals = [{}, {}]
             semesters = [[], []]
+        elif len(semesters) == 1:
+            totals.append({})
+            semesters.append([])
 
         transcripts[i] = {
             "level": i + 1,
