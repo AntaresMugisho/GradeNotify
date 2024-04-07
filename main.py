@@ -58,8 +58,11 @@ def get_total(table_data: list) -> dict:
 
 
 def save_data(data: dict):
-    with open("data.json", "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=2, ensure_ascii=False)
+    try:
+        with open("data.json", "w", encoding="utf-8") as file:
+            json.dump(data, file, indent=2, ensure_ascii=False)
+    except Exception as e:
+        logger.error(f"Can't save data in file: {e}")
 
 
 def get_previous_data() -> dict:
@@ -70,6 +73,7 @@ def get_previous_data() -> dict:
     with open("data.json", "r") as file:
         previous_data = json.load(file)
         return previous_data
+
 
 
 def extract_courses(data: dict) -> list:
@@ -197,6 +201,3 @@ if __name__ == "__main__":
 
             notify(message)
             save_data(actual_data)
-
-        else:
-            print("No updates available")
