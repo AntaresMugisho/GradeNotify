@@ -1,12 +1,19 @@
 import json
 import os
+import sys
 from datetime import datetime
-from pprint import pprint
 
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+from loguru import logger
+
+
 load_dotenv()
+
+logger.remove()
+logger.add(sys.stderr, level="DEBUG")
+logger.add("logs/err.log", level="WARNING", rotation="512 Kb")
 
 
 def get_course(table_data: list) -> dict:
@@ -97,8 +104,9 @@ def notify(message: str):
             'url': "https://mis.hau.bi",
             'url_title': "View in the browser"
         }).raise_for_status()
+
     except requests.RequestException as e:
-        print(f"Failed to send notification : {e}")
+        logger.error(f"Failed to send notification : {e}")
         raise e
 
 
@@ -173,7 +181,7 @@ if __name__ == "__main__":
         response = requests.get(url, headers=headers)
         response.raise_for_status()
     except requests.RequestException as e:
-        print(f"{e}")
+        logger.error(f"Error while requesting the page : {e}")
     else:
         previous_data = get_previous_data()
         actual_data = scrap(response.text)
