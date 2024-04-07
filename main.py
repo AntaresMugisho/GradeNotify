@@ -70,10 +70,13 @@ def get_previous_data() -> dict:
     Loads previously saved data from JSON
     :return: data
     """
-    with open("data.json", "r") as file:
-        previous_data = json.load(file)
-        return previous_data
-
+    try:
+        with open("data.json", "r") as file:
+            data = json.load(file)
+            return data
+    except FileNotFoundError as e:
+        logger.warning(f"{e}")
+        raise e
 
 
 def extract_courses(data: dict) -> list:
@@ -190,8 +193,12 @@ if __name__ == "__main__":
     except requests.RequestException as e:
         logger.error(f"Error while requesting the page : {e}")
     else:
-        previous_data = get_previous_data()
         actual_data = scrap(response.text)
+        try:
+            previous_data = get_previous_data()
+        except FileNotFoundError:
+            save_data(actual_data)
+
         updated = compare(previous_data, actual_data)
 
         if updated:
