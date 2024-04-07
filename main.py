@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime
+from pprint import pprint
 
 import requests
 from bs4 import BeautifulSoup
@@ -54,7 +55,7 @@ def save_data(data: dict):
         json.dump(data, file, indent=2, ensure_ascii=False)
 
 
-def get_previous_data():
+def get_previous_data() -> dict:
     """
     Loads previously saved data from JSON
     :return: data
@@ -64,11 +65,26 @@ def get_previous_data():
         return previous_data
 
 
-def compare(previous_data, actual_data):
-    if previous_data == actual_data:
+def extract_courses(data: dict) -> list:
+    courses = []
+    for transcript in data["transcripts"]:
+        categories = transcript["first_semester"]["categories"] + transcript["second_semester"]["categories"]
+        for category in categories:
+            courses.extend(category["courses"])
+
+    return courses
+
+
+def compare(previous: dict, actual: dict):
+
+    old_courses = extract_courses(previous)
+    actual_courses = extract_courses(actual)
+
+    diff = [course for course in actual_courses if course not in old_courses]
+
+    if not diff:
         return False
 
-    diff = {key : (previous_data[key], actual_data[key]) for key in previous_data if previous_data[key] != actual_data[key]}
     return diff
 
 
@@ -78,11 +94,11 @@ def notify(message: str):
             'user': os.environ["PUSHOVER_USER"],
             'token': os.environ["PUSHOVER_TOKEN"],
             'message': message,
-            'url': "https://www.google.com",
-            'url_title': "Visit"
+            'url': "https://mis.hau.bi",
+            'url_title': "View in the browser"
         }).raise_for_status()
     except requests.RequestException as e:
-        print(f"Err : {e}")
+        print(f"Failed to send notification : {e}")
         raise e
 
 
@@ -126,20 +142,21 @@ def scrap(html_content: str) -> dict:
                 categories = []
 
         # Write collected data in a transcript
-        try:
-            transcripts[i] = {
-                "level": i + 1,
-                "first_semester": {
-                    "total": totals[0],
-                    "categories": semesters[0]
-                },
-                "second_semester": {
-                    "total": totals[1],
-                    "categories": semesters[1],
-                }
+        if len(totals) < 2:
+            totals = [{}, {}]
+            semesters = [[], []]
+
+        transcripts[i] = {
+            "level": i + 1,
+            "first_semester": {
+                "total": totals[0],
+                "categories": semesters[0],
+            },
+            "second_semester": {
+                "total": totals[1],
+                "categories": semesters[1],
             }
-        except IndexError as e:
-            print(f"Error while trying to save transcript of level {i+1}: {e}")
+        }
 
     return {
         "date": datetime.now().isoformat(),
@@ -152,8 +169,6 @@ if __name__ == "__main__":
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                              'Chrome/109.0.0.0 Safari/537.3'}
 
-
-
     try:
         response = requests.get(url, headers=headers)
         response.raise_for_status()
@@ -162,12 +177,15 @@ if __name__ == "__main__":
     else:
         previous_data = get_previous_data()
         actual_data = scrap(response.text)
-        difference = compare(actual_data, previous_data)
+        updated = compare(previous_data, actual_data)
 
-        if difference:
-            # notify("Hello Hello antares")
-            # save(data)
-            print("Updates available")
-            print(difference)
+        if updated:
+            message = "Hello Antares, some of your grades were updated:\n"
+            for course in updated:
+                message += f"    • {course['course_title'].strip()} : {course['percent']} %\n"
+
+            notify(message)
+            save_data(actual_data)
+
         else:
             print("No updates available")

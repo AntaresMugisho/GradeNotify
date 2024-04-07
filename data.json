@@ -1,5 +1,5 @@
 {
-  "date": "2024-04-05T14:11:45.078668",
+  "date": "2024-04-07T23:41:48.329377",
   "transcripts": [
     {
       "level": 1,
@@ -14,23 +14,6 @@
           "gpa": 3.12
         },
         "categories": [
-          {
-            "category_code": "UE 111",
-            "category_title": "Cours d appui  I",
-            "courses": [
-              {
-                "course_code": "THEO.",
-                "course_title": "Développement Spirituel      ",
-                "credits": 1,
-                "graded": null,
-                "grade": null,
-                "gp": null,
-                "percent": null,
-                "credits_points": null,
-                "gpa": null
-              }
-            ]
-          },
           {
             "category_code": "UE 111",
             "category_title": "Cours d Appui I",
@@ -72,6 +55,17 @@
                 "gp": 11.1,
                 "percent": 81,
                 "credits_points": 243,
+                "gpa": null
+              },
+              {
+                "course_code": "THEO.",
+                "course_title": "Développement Spirituel      ",
+                "credits": 1,
+                "graded": null,
+                "grade": null,
+                "gp": null,
+                "percent": null,
+                "credits_points": null,
                 "gpa": null
               }
             ]
@@ -152,7 +146,7 @@
           "grade": "",
           "gp": 106.8,
           "percent": 77.2,
-          "credit_points": 34910.3,
+          "credit_points": 35612.7,
           "gpa": 3.34
         },
         "categories": [
@@ -228,17 +222,6 @@
             "category_title": "Informatique,Signal et Communication",
             "courses": [
               {
-                "course_code": "BSIC 1201",
-                "course_title": "Signal,Outils et Applications     ",
-                "credits": 3,
-                "graded": 3,
-                "grade": "C+",
-                "gp": 7.5,
-                "percent": 61.5,
-                "credits_points": 184.5,
-                "gpa": null
-              },
-              {
                 "course_code": "BCSC 1202",
                 "course_title": "Architecture materielle et logicielle et Projet informatique ",
                 "credits": 4,
@@ -259,6 +242,17 @@
                 "percent": 77,
                 "credits_points": 385,
                 "gpa": null
+              },
+              {
+                "course_code": "BSIC 1201",
+                "course_title": "Signal,Outils et Applications     ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "C+",
+                "gp": 7.5,
+                "percent": 61.5,
+                "credits_points": 184.5,
+                "gpa": null
               }
             ]
           }
@@ -270,12 +264,12 @@
       "first_semester": {
         "total": {
           "credits": 37,
-          "graded": 33,
+          "graded": 35,
           "grade": "",
-          "gp": 99.8,
-          "percent": 69.6,
-          "credit_points": 2353.0,
-          "gpa": 3.02
+          "gp": 106.4,
+          "percent": 70.4,
+          "credit_points": 2509.0,
+          "gpa": 3.04
         },
         "categories": [
           {
@@ -286,11 +280,11 @@
                 "course_code": "BREC 2201",
                 "course_title": "Initiation à la Rechereche     ",
                 "credits": 2,
-                "graded": null,
-                "grade": null,
-                "gp": null,
-                "percent": null,
-                "credits_points": null,
+                "graded": 2,
+                "grade": "B+",
+                "gp": 6.6,
+                "percent": 78,
+                "credits_points": 156,
                 "gpa": null
               },
               {
@@ -305,17 +299,6 @@
                 "gpa": null
               },
               {
-                "course_code": "BTHE 2201",
-                "course_title": "Croyances chrétiennes      ",
-                "credits": 2,
-                "graded": 2,
-                "grade": "C+",
-                "gp": 5,
-                "percent": 60,
-                "credits_points": 120,
-                "gpa": null
-              },
-              {
                 "course_code": "BIB 101",
                 "course_title": "Introduction à la Bible     ",
                 "credits": 2,
@@ -324,6 +307,17 @@
                 "gp": 6,
                 "percent": 72,
                 "credits_points": 144,
+                "gpa": null
+              },
+              {
+                "course_code": "BTHE 2201",
+                "course_title": "Croyances chrétiennes      ",
+                "credits": 2,
+                "graded": 2,
+                "grade": "C+",
+                "gp": 5,
+                "percent": 60,
+                "credits_points": 120,
                 "gpa": null
               },
               {
@@ -411,17 +405,6 @@
             "category_title": "Signal, Communication et réseaux",
             "courses": [
               {
-                "course_code": "BSIC 2102",
-                "course_title": "Theorie de l information et Communications numeriques  ",
-                "credits": 3,
-                "graded": 3,
-                "grade": "B+",
-                "gp": 9.9,
-                "percent": 74,
-                "credits_points": 222,
-                "gpa": null
-              },
-              {
                 "course_code": "BNET 2103",
                 "course_title": "Réseaux d entreprise,TCP/IP,Interconnection et applications    ",
                 "credits": 4,
@@ -430,6 +413,17 @@
                 "gp": 10.8,
                 "percent": 66.5,
                 "credits_points": 266,
+                "gpa": null
+              },
+              {
+                "course_code": "BSIC 2102",
+                "course_title": "Theorie de l information et Communications numeriques  ",
+                "credits": 3,
+                "graded": 3,
+                "grade": "B+",
+                "gp": 9.9,
+                "percent": 74,
+                "credits_points": 222,
                 "gpa": null
               }
             ]
@@ -443,7 +437,7 @@
           "grade": "",
           "gp": 40.5,
           "percent": 78.0,
-          "credit_points": 40805.0,
+          "credit_points": 41507.4,
           "gpa": 3.12
         },
         "categories": [
@@ -517,6 +511,16 @@
         ]
       }
     },
-    {}
+    {
+      "level": 3,
+      "first_semester": {
+        "total": {},
+        "categories": []
+      },
+      "second_semester": {
+        "total": {},
+        "categories": []
+      }
+    }
   ]
 }
