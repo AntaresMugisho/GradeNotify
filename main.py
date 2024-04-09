@@ -209,4 +209,4 @@ if __name__ == "__main__":
             notify(message)
             save_data(actual_data)
         else:
-            notify(No updates availables.)
+            notify("No updates availables.")
