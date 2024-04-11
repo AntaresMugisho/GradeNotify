@@ -2,4 +2,5 @@ env/
 logs/
 .idea/
 .env
-data.json
+db.json
+test.py
