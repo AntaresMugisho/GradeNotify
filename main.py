@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
         updated = compare(previous_data, actual_data)
         if updated:
-            message = f"Hello {os.environ['STUDENT_NAME']} , some of your grades were updated:\n"
+            message = f"Hello {os.environ['STUDENT_NAME']}, some of your grades were updated:\n"
             for course in updated:
                 message += f"    • {course['course_title'].strip()} : {course['percent']} %\n"
 
