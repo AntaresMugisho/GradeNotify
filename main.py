@@ -17,22 +17,22 @@ logger.add("logs/err.log", level="WARNING", rotation="512 Kb")
 
 
 def get_course(table_data: list) -> dict:
-    course_keys = ["course_code", "course_title", "credits", "graded", "grade", "gp", "percent", "credits_points",
-                   "gpa"]
+    """
+    From a list of HTML table data create a course as a dictionary
+    :param table_data: a list of td HTML tags containing a course details
+    :return: a designed key - value course
+    """
+    course_keys = ["course_code", "course_title", "credits", "graded", "grade", "gp", "percent",
+                   "credits_points", "gpa"]
     course_values = []
-    for i in range(9):
+    for i in range(len(course_keys)):
         value = table_data[i].text if table_data[i].text else None
-        if value and value.isnumeric():
-            value = int(value)
-        elif value:
-            try:
-                value = float(value)
-            except ValueError:
-                pass
+        if value is not None:
+            value = int(value) if value.isnumeric() else float(value) if value.replace(".", "").isnumeric() else value
+
         course_values.append(value)
 
-    course = dict(zip(course_keys, course_values))
-    return course
+    return dict(zip(course_keys, course_values))
 
 
 def get_category(table_data: list) -> dict:
