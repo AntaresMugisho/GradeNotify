@@ -2,6 +2,7 @@ import json
 import os
 import sys
 from datetime import datetime
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
@@ -14,6 +15,8 @@ load_dotenv()
 logger.remove()
 logger.add(sys.stderr, level="DEBUG")
 logger.add("logs/err.log", level="WARNING", rotation="512 Kb")
+
+DB_FILE_PATH = Path(__file__).parent / "db.json"
 
 
 def get_course(table_data: list) -> dict:
@@ -36,6 +39,11 @@ def get_course(table_data: list) -> dict:
 
 
 def get_category(table_data: list) -> dict:
+    """
+     From a list of HTML table data create a course category as a dictionary
+    :param table_data: a list of td HTML tags containing a course category details
+    :return: a designed key - value course
+    """
     category = {
         "category_code": table_data[0].text,
         "category_title": table_data[1].text,
@@ -45,6 +53,11 @@ def get_category(table_data: list) -> dict:
 
 
 def get_total(table_data: list) -> dict:
+    """
+    From a list of HTML table data, represent marks details as a dictionary
+    :param table_data: a list of td HTML tags containing the student grade total marks
+    :return: a designed key - value marks details
+    """
     total = {
         "credits": int(table_data[1].text),
         "graded": int(table_data[2].text),
@@ -58,44 +71,62 @@ def get_total(table_data: list) -> dict:
 
 
 def save_data(data: dict):
-    try:
-        with open("data.json", "w", encoding="utf-8") as file:
-            json.dump(data, file, indent=2, ensure_ascii=False)
-    except Exception as e:
-        logger.error(f"Can't save data in file: {e}")
+    """
+    Write scrapped data into a JSON file
+    :param data: The data obtained after the site scrapping
+    """
+    logger.info("Writing data into the JSON file...")
+    if not DB_FILE_PATH.exists():
+        with open(DB_FILE_PATH, "w") as file:
+            file.write("")
+
+    with open(DB_FILE_PATH, "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=2, ensure_ascii=False)
 
 
 def get_previous_data() -> dict:
     """
-    Loads previously saved data from JSON
-    :return: data
+    Get previously saved student marks from JSON file
+    :return: The previously saved student marks or empty dict if there was no previously saved data
     """
+    logger.info("Reading data from JSON file...")
     try:
-        with open("data.json", "r") as file:
+        with open(DB_FILE_PATH, "r") as file:
             data = json.load(file)
-            return data
     except FileNotFoundError as e:
-        logger.warning(f"{e}")
-        raise e
+        logger.warning(f"Can't find the JSON file : {e}")
+        return {}
+
+    return data
 
 
 def extract_courses(data: dict) -> list:
+    """
+    Get courses from all transcripts
+    :param data: JSON data containing all student transcripts as well as their courses details
+    :return: The list of courses extracted from all transcripts
+    """
     courses = []
-    for transcript in data["transcripts"]:
-        categories = transcript["first_semester"]["categories"] + transcript["second_semester"]["categories"]
-        for category in categories:
-            courses.extend(category["courses"])
+    if data.get("transcripts"):
+        for transcript in data["transcripts"]:
+            categories = transcript["first_semester"]["categories"] + transcript["second_semester"]["categories"]
+            for category in categories:
+                courses.extend(category["courses"])
 
     return courses
 
 
 def compare(previous: dict, actual: dict):
-
+    """
+    Check if there is difference between previously saved transcripts and the actually scrapped one
+    :param previous: The old student transcripts saved on DB_FILE
+    :param actual: The actual transcripts as scrapped from the university website
+    :return: A list of courses that changed or False if there is no difference between old and actual transcripts
+    """
     old_courses = extract_courses(previous)
     actual_courses = extract_courses(actual)
 
     diff = [course for course in actual_courses if course not in old_courses]
-
     if not diff:
         return False
 
@@ -103,6 +134,10 @@ def compare(previous: dict, actual: dict):
 
 
 def notify(message: str):
+    """
+    Send a notification to the student using Pushover API
+    :param message: The message to be sent as notification
+    """
     try:
         requests.post("https://api.pushover.net/1/messages.json", data={
             'user': os.environ["PUSHOVER_USER"],
@@ -114,10 +149,14 @@ def notify(message: str):
 
     except requests.RequestException as e:
         logger.error(f"Failed to send notification : {e}")
-        raise e
 
 
 def scrap(html_content: str) -> dict:
+    """
+    Scrap the university website to extract student transcripts
+    :param html_content: The HTML page content to scrap
+    :return: A structured dictionary containing student transcripts
+    """
     soup = BeautifulSoup(html_content, "html.parser")
     tables = soup.find_all(id="transdetail")
 
@@ -135,25 +174,24 @@ def scrap(html_content: str) -> dict:
         for row in rows[1:]:
             tds = row.find_all("td")
 
-            # If a row contains 2 td, it's a category row
+            # If a row contains 2 td tags, it's a category row
             if len(tds) == 2:
                 category = get_category(tds)
                 categories.append(category)
 
-            # If a row contains 9 td, it's a course row
+            # If a row contains 9 td tags, it's a course row
             elif len(tds) == 9:
                 course = get_course(tds)
                 categories[-1]["courses"].append(course)
 
-            # If a row contains 8 td, it's a total row
+            # If a row contains 8 td tags, it's a total row
             elif len(tds) == 8:
                 total = get_total(tds)
                 totals.append(total)
 
+                # As the total row is the last, append categories to the semesters list and clear them to prepare
+                # the next semester categories
                 semesters.append(categories)
-
-            # In the case row contains 1 td, it's a second semester start row
-            elif len(tds) == 1:
                 categories = []
 
         # Write collected data in a transcript
@@ -183,7 +221,7 @@ def scrap(html_content: str) -> dict:
 
 
 if __name__ == "__main__":
-    url = f"https://mis.hau.bi/student/loadsingletranscriptforstudent2.php?stucode={os.environ['STUCODE']}"
+    url = f"https://mis.hau.bi/student/loadsingletranscriptforstudent2.php?stucode={os.environ['STUDENT_CODE']}"
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                              'Chrome/109.0.0.0 Safari/537.3'}
 
@@ -194,15 +232,11 @@ if __name__ == "__main__":
         logger.error(f"Error while requesting the page : {e}")
     else:
         actual_data = scrap(response.text)
-        try:
-            previous_data = get_previous_data()
-        except FileNotFoundError:
-            save_data(actual_data)
+        previous_data = get_previous_data()
 
         updated = compare(previous_data, actual_data)
-
         if updated:
-            message = "Hello Antares, some of your grades were updated:\n"
+            message = f"Hello {os.environ['STUDENT_NAME']} , some of your grades were updated:\n"
             for course in updated:
                 message += f"    • {course['course_title'].strip()} : {course['percent']} %\n"
 
