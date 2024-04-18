@@ -163,7 +163,7 @@ def notify(message: str, via: str = "pushover"):
         receiver_email = os.environ["STUDENT_EMAIL"]
 
         mail = MIMEMultipart()
-        mail["From"] = sender_email
+        mail["From"] = f"GradeNotify<{sender_email}>"
         mail["To"] = receiver_email
         mail["Subject"] = "Grade Notify"
 
@@ -178,7 +178,7 @@ def notify(message: str, via: str = "pushover"):
         mail.attach(MIMEText(html_body, "html"))
 
         try:
-            with smtplib.SMTP(host, 465) as server:
+            with smtplib.SMTP(host, 587) as server:
                 server.starttls()
                 server.login(sender_email, password)
                 server.send_message(mail)
@@ -270,11 +270,9 @@ if __name__ == "__main__":
 
         updated = compare(previous_data, actual_data)
         if updated:
-            message = f"Hello {os.environ['STUDENT_NAME']} 👋, some of your grades were updated:\n"
+            message = f"Hello {os.environ['STUDENT_NAME']} 👋, some of your grades were updated:<br/>"
             for course in updated:
-                message += f"    • {course['course_title'].strip()} : {course['percent']} %\n"
+                message += f"    • {course['course_title'].strip()} : {course['percent']} %<br/>"
 
             notify(message=message, via="mail")
             save_data(actual_data)
-        else:
-            notify(message="No available updates", via="mail")
