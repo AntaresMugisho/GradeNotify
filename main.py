@@ -1,6 +1,9 @@
 import json
 import os
 import sys
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 from pathlib import Path
 
@@ -133,23 +136,54 @@ def compare(previous: dict, actual: dict):
     return diff
 
 
-def notify(message: str):
+def notify(message: str, via: str = "pushover"):
     """
     Send a notification to the student using Pushover API
     :param message: The message to be sent as notification
+    :param via: The notification service to use
     """
-    try:
-        requests.post("https://api.pushover.net/1/messages.json", data={
-            'user': os.environ["PUSHOVER_USER"],
-            'token': os.environ["PUSHOVER_TOKEN"],
-            'message': message,
-            'url': "https://mis.hau.bi",
-            'url_title': "View in the browser"
-        }).raise_for_status()
+    logger.info(f"Sending {via} notification...")
+    if via == "pushover":
+        try:
+            requests.post("https://api.pushover.net/1/messages.json", data={
+                'user': os.environ["PUSHOVER_USER"],
+                'token': os.environ["PUSHOVER_TOKEN"],
+                'message': message,
+                'url': "https://mis.hau.bi",
+                'url_title': "View in the browser"
+            }).raise_for_status()
 
-    except requests.RequestException as e:
-        logger.error(f"Failed to send notification : {e}")
+        except requests.RequestException as e:
+            logger.error(f"Failed to send notification via pushover : {e}")
 
+    elif via == "mail":
+        host = os.environ["MAIL_HOST"]
+        sender_email = os.environ["MAIL_USERNAME"]
+        password = os.environ["MAIL_PASSWORD"]
+        receiver_email = os.environ["STUDENT_EMAIL"]
+
+        mail = MIMEMultipart()
+        mail["From"] = sender_email
+        mail["To"] = receiver_email
+        mail["Subject"] = "Grade Notify"
+
+        html_body = f"""
+        <html>
+        <body>
+            <p>{message}</p>
+            <a href="https://mis.hau.bi">View in the browser</a>
+        </body>
+        </html>
+        """
+        mail.attach(MIMEText(html_body, "html"))
+
+        try:
+            with smtplib.SMTP(host, 465) as server:
+                server.starttls()
+                server.login(sender_email, password)
+                server.send_message(mail)
+        except Exception as e:
+            logger.error(f"Error while trying to send mail notification: {e}")
 
 def scrap(html_content: str) -> dict:
     """
@@ -240,5 +274,7 @@ if __name__ == "__main__":
             for course in updated:
                 message += f"    • {course['course_title'].strip()} : {course['percent']} %\n"
 
-            notify(message)
+            notify(message=message, via="mail")
             save_data(actual_data)
+        else:
+            notify(message="No available updates", via="mail")
