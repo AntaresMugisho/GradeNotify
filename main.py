@@ -163,7 +163,7 @@ def notify(message: str, via: str = "pushover"):
         receiver_email = os.environ["STUDENT_EMAIL"]
 
         mail = MIMEMultipart()
-        mail["From"] = f"GradeNotify<{sender_email}>"
+        mail["From"] = f"GradeNotify<no-reply@gradenotify.com>"
         mail["To"] = receiver_email
         mail["Subject"] = "Grade Notify"
 
